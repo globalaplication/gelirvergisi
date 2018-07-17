@@ -1,9 +1,9 @@
 
 cizelge = {
-150.00:25, 
-300.00:30, 
-600.00:35, 
-}
+    150.00:25, 300.00:30, 
+    600.00:35
+    }
+    
 def vergial(geliri, yuzde=0):
     for test in cizelge:
         if geliri <= test :
