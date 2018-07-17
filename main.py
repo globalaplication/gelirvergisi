@@ -1,6 +1,7 @@
+
 cizelge = {
-    150.00:25, 300.00:30, 
-    600.00:35
+    150.000:25, 300.000:30, 
+    600.000:35, 1200.000:40
     }
 
 def vergial(geliri, yuzde=0):
@@ -13,4 +14,5 @@ def vergial(geliri, yuzde=0):
     return "vergi yuzdesi %{}, {} Tl vergi alinmali ".format(yuzde, 
     geliri * yuzde /100)
 
-print (vergial(390.00))
+print (vergial(1201.000))
+
