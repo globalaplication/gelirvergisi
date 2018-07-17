@@ -1,3 +1,4 @@
+
 cizelge = {
 150.00:25, 
 300.00:30, 
@@ -9,6 +10,7 @@ def vergial(geliri, yuzde=0):
         if geliri <= test :
             yuzde = cizelge[test]
             break
-    return "vergi yuzdesi %{}, {} Tl vergi alinmali ".format(yuzde, geliri * yuzde /100)
+    return "vergi yuzdesi %{}, {} Tl vergi alinmali ".format(yuzde, 
+    geliri * yuzde /100)
 
 print (vergial(149.00))
