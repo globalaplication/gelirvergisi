@@ -24,7 +24,9 @@ def vergial(geliri, yuzde=0):
     ondalik(str(geliri * yuzde /100)
     [0:-2]))
 
-print (vergial("1.200.500"))
+gelir = input("gelir: ")
+
+print (vergial(gelir))
 
 
 
