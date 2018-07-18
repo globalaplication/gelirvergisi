@@ -6,11 +6,13 @@ cizelge = {
 def ondalik(tl, test=""):
     for en, nokta in enumerate(tl[::-1], 1):
         if en%3 is 0:
-            test = test + str(nokta) + str(".")
+            test = test + nokta + str(".")
         else:
             test = test + nokta
     return test[::-1]
 def vergial(geliri, yuzde=0):
+    geliri = geliri.replace(".","")
+    geliri = float(geliri)
     for test in cizelge:
         if geliri <= test :
             yuzde = cizelge[test]
@@ -21,7 +23,7 @@ def vergial(geliri, yuzde=0):
     ondalik(str(geliri * yuzde /100)
     [0:-2]))
 
-print (vergial(100000))
+print (vergial("100.000"))
 
 
 
