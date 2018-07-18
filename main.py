@@ -1,8 +1,15 @@
+
 cizelge = {
     150000:25, 300000:30, 
     600000:35, 1200000:40
     }
-
+def ondalik(tl, test=""):
+    for en, nokta in enumerate(tl[::-1], 1):
+        if en%3 is 0:
+            test = test + str(nokta) + str(".")
+        else:
+            test = test + nokta
+    return test[::-1]
 def vergial(geliri, yuzde=0):
     for test in cizelge:
         if geliri <= test :
@@ -11,7 +18,10 @@ def vergial(geliri, yuzde=0):
     if yuzde is 0:
         yuzde = 50
     return "vergi yuzdesi %{}, {} Tl vergi alinmali ".format(yuzde, 
-    str(geliri * yuzde /100)
-    [0:-2])
+    ondalik(str(geliri * yuzde /100)
+    [0:-2]))
 
-print (vergial(599000))
+print (vergial(100000))
+
+
+
