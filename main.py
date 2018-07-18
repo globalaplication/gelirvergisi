@@ -9,6 +9,8 @@ def ondalik(tl, test=""):
             test = test + nokta + str(".")
         else:
             test = test + nokta
+    if test.endswith(".") is True:
+        return test[::-1][1:]
     return test[::-1]
 def vergial(geliri, yuzde=0):
     geliri = geliri.replace(".","")
@@ -23,7 +25,7 @@ def vergial(geliri, yuzde=0):
     ondalik(str(geliri * yuzde /100)
     [0:-2]))
 
-print (vergial("100.000"))
+print (vergial("1.200.000"))
 
 
 
