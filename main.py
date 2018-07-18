@@ -4,10 +4,9 @@ cizelge = {
     }
 def ondalik(tl, test=""):
     for en, nokta in enumerate(tl[::-1], 1):
-        if en%3 is 0:
-            test = test + nokta + str(".")
+        if en%3 is 0:test = test + "{}{}".format(nokta, ".")
         else:
-            test = test + nokta
+            test = test + "{}".format(nokta)
     if test.endswith(".") is True:
         return test[::-1][1:]
     return test[::-1]
